@@ -25,7 +25,7 @@
   --spacing-500: 2.5rem;
   --spacing-600: 2.875rem;
   --spacing-700: 3.75rem;
-  --spcaing-800: 3.5rem;
+  --spacing-800: 3.5rem;
 
   --container-mobile: 23.4375rem;
   --header-mobile: 19.75rem;
@@ -50,11 +50,13 @@ p {
 
 /* GLOBAL STYLES */
 body {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   line-height: 1.5;
   font-family: var(--font);
   background-color: var(--color-white);
-  padding: var(--spcaing-800) 1.875rem var(--spacing-600);
+  padding: var(--spacing-800) 1.875rem var(--spacing-600);
   color: var(--color-grey-500);
 }
 
@@ -99,6 +101,8 @@ main {
   font-size: 0.8125rem;
   font-weight: 200;
   margin-top: var(--spacing-75);
+  max-width: 15.625rem;
+  line-height: 1.6;
 }
 
 article {
@@ -145,11 +149,17 @@ article img {
 }
 
 .attribution {
-  margin-bottom: var(--spacing-200);
   text-align: center;
-  margin-top: auto;
+  margin-top: var(--spacing-500);
 }
-
+.attribution a {
+  color: var(--color-grey-400);
+  text-decoration: none;
+}
+.attribution a:hover,
+.attribution a:focus-visible {
+  text-decoration: wavy;
+}
 /* COMPONENTS */
 
 /* MEDIA QUERIES */
