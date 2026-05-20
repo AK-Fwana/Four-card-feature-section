@@ -115,6 +115,14 @@ article {
   min-height: 15.625rem;
 }
 
+article:hover {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+article:hover {
+  transform: translate(-5px);
+}
 article h3 {
   margin-bottom: var(--spacing-50);
   font-size: 1.25rem;
