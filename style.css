@@ -17,11 +17,19 @@
 
   /* Spacing */
   --spacing-50: 0.25rem;
+  --spacing-75: 0.375rem;
   --spacing-100: 0.5rem;
   --spacing-200: 1rem;
   --spacing-300: 1.5rem;
   --spacing-400: 2rem;
   --spacing-500: 2.5rem;
+  --spacing-600: 2.875rem;
+  --spacing-700: 3.75rem;
+  --spcaing-800: 3.5rem;
+
+  --container-mobile: 23.4375rem;
+  --header-mobile: 19.75rem;
+  --border-accent: 0.25rem;
 }
 
 /* RESET */
@@ -36,9 +44,8 @@ img {
   display: block;
 }
 
-.attribution {
-  margin-bottom: var(--spacing-200);
-  text-align: center;
+p {
+  color: var(--color-grey-400);
 }
 
 /* GLOBAL STYLES */
@@ -47,20 +54,21 @@ body {
   line-height: 1.5;
   font-family: var(--font);
   background-color: var(--color-white);
-  padding: 56px 30px 46px 29px;
+  padding: var(--spcaing-800) 1.875rem var(--spacing-600);
+  color: var(--color-grey-500);
 }
 
 main {
   width: 100%;
-  max-width: 375px;
+  max-width: var(--container-mobile);
   margin: 0 auto;
+  flex: 1;
 }
 /* TYPOGRAPHY */
 .feature-header {
-  max-width: 316px;
+  max-width: var(--header-mobile);
   margin-inline: auto;
   text-align: center;
-  color: var(--color-grey-500);
 }
 
 .header-subtitle {
@@ -78,9 +86,69 @@ main {
   margin-top: var(--spacing-200);
   font-size: 0.9375rem;
   font-weight: 400;
-  color: var(--color-grey-400);
 }
+
 /* LAYOUT */
+.card-feature {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+  margin-top: var(--spacing-700);
+}
+.card-feature p {
+  font-size: 0.8125rem;
+  font-weight: 200;
+  margin-top: var(--spacing-75);
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-400);
+  box-shadow: 0 0.9375rem 1.875rem -0.6875rem rgba(131, 166, 210, 0.5);
+  border-radius: var(--spacing-100);
+}
+
+article h3 {
+  margin-bottom: var(--spacing-50);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+article img {
+  margin-left: auto;
+  margin-top: var(--spacing-400);
+}
+
+.supervisor-card,
+.team-card,
+.karma-card,
+.calculator-card {
+  border-top-width: var(--border-accent);
+  border-top-style: solid;
+}
+
+.supervisor-card {
+  border-top-color: var(--color-cyan);
+}
+
+.team-card {
+  border-top-color: var(--color-red);
+}
+
+.karma-card {
+  border-top-color: var(--color-orange);
+}
+
+.calculator-card {
+  border-top-color: var(--color-blue);
+}
+
+.attribution {
+  margin-bottom: var(--spacing-200);
+  text-align: center;
+  margin-top: auto;
+}
 
 /* COMPONENTS */
 
