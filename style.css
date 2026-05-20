@@ -112,6 +112,7 @@ article {
   padding: var(--spacing-400);
   box-shadow: 0 0.9375rem 1.875rem -0.6875rem rgba(131, 166, 210, 0.5);
   border-radius: var(--spacing-100);
+  min-height: 15.625rem;
 }
 
 article h3 {
@@ -122,6 +123,7 @@ article h3 {
 
 article img {
   margin-left: auto;
+  margin-top: auto;
   margin-top: var(--spacing-400);
 }
 
@@ -163,23 +165,70 @@ article img {
 }
 
 /* MEDIA QUERIES */
+@media (min-width: 48rem) {
+  main {
+    max-width: 43.75rem;
+  }
+
+  .feature-header {
+    max-width: 33.75rem;
+  }
+
+  .card-feature {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-400);
+  }
+
+  .team-card {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    width: 50%;
+    justify-self: center;
+  }
+
+  .supervisor-card {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .karma-card {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .calculator-card {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    width: 50%;
+    justify-self: center;
+  }
+}
 
 @media (min-width: 64rem) {
   main {
     max-width: 69.375rem;
   }
+
   .feature-header {
     max-width: 33.75rem;
   }
+
   .header-subtitle,
   .header-title {
     font-size: 2.25rem;
   }
+
   .card-feature {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: var(--spacing-400);
   }
+
+  .team-card,
+  .calculator-card {
+    width: auto;
+  }
+
   .supervisor-card {
     grid-column: 1;
     grid-row: 1 / 3;
