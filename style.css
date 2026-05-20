@@ -35,13 +35,25 @@ img {
   display: block;
 }
 
+.attribution {
+  margin-bottom: var(--spacing-200);
+  text-align: center;
+}
+
+/* GLOBAL STYLES */
 body {
   min-height: 100vh;
   line-height: 1.5;
   font-family: var(--font);
+  background-color: var(--color-white);
+  padding: 56px 30px 46px 29px;
 }
-/* GLOBAL STYLES */
 
+main {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+}
 /* TYPOGRAPHY */
 
 /* LAYOUT */
