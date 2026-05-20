@@ -76,6 +76,7 @@ main {
 .header-subtitle {
   font-size: 1.5rem;
   font-weight: 200;
+  color: var(--color-grey-400);
 }
 
 .header-title {
@@ -167,7 +168,13 @@ article img {
   main {
     max-width: 69.375rem;
   }
-
+  .feature-header {
+    max-width: 33.75rem;
+  }
+  .header-subtitle,
+  .header-title {
+    font-size: 2.25rem;
+  }
   .card-feature {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
