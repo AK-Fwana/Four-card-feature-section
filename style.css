@@ -16,6 +16,7 @@
   --font: "Poppins", sans-serif;
 
   /* Spacing */
+  --spacing-50: 0.25rem;
   --spacing-100: 0.5rem;
   --spacing-200: 1rem;
   --spacing-300: 1.5rem;
@@ -51,11 +52,34 @@ body {
 
 main {
   width: 100%;
-  max-width: 350px;
+  max-width: 375px;
   margin: 0 auto;
 }
 /* TYPOGRAPHY */
+.feature-header {
+  max-width: 316px;
+  margin-inline: auto;
+  text-align: center;
+  color: var(--color-grey-500);
+}
 
+.header-subtitle {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.header-title {
+  margin-top: var(--spacing-50);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.header-description {
+  margin-top: var(--spacing-200);
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: var(--color-grey-400);
+}
 /* LAYOUT */
 
 /* COMPONENTS */
