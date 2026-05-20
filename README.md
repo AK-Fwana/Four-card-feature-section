@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: ()
-- Live Site URL: ()
+- Solution URL: (https://github.com/AK-Fwana/Four-card-feature-section)
+- Live Site URL: (https://ak-fwana.github.io/Four-card-feature-section/)
 
 ## My process
 
