@@ -171,6 +171,7 @@ article img {
   .card-feature {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
+    gap: var(--spacing-400);
   }
   .supervisor-card {
     grid-column: 1;
