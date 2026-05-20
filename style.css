@@ -4,13 +4,13 @@
 /* VARIABLES */
 :root {
   /* Colors */
-  --Grey-500-color: hsl(234, 12%, 34%);
-  --Grey-400-color: hsl(212, 6%, 44%);
-  --white-color: hsl(0, 0%, 100%);
-  --Red-color: hsl(0, 78%, 62%);
-  --Cyan-color: hsl(180, 62%, 55%);
-  --Blue-color: hsl(212, 86%, 64%);
-  --Orange-color: hsl(34, 97%, 64%);
+  --color-grey-500: hsl(234, 12%, 34%);
+  --color-grey-400: hsl(212, 6%, 44%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-red: hsl(0, 78%, 62%);
+  --color-cyan: hsl(180, 62%, 55%);
+  --color-blue: hsl(212, 86%, 64%);
+  --color-orange: hsl(34, 97%, 64%);
 
   /* Fonts */
   --font: "Poppins", sans-serif;
